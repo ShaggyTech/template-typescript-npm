@@ -2,7 +2,7 @@
   "name": "@shaggytools/template-typescript-npm",
   "libraryName": "library-name",
   "version": "1.0.0",
-  "description": "A starter template for getting started with Node, Typescript, , Rollup, Jest, and JSDoc.",
+  "description": "A starter template for publishing a package with Node, Typescript, Rollup, Jest, and JSDoc.",
   "engines": {
     "node": ">=12.14.0 <13.0.0",
     "npm": "6.11.3"
@@ -27,8 +27,10 @@
     "build": "rollup -c rollup.config.ts",
     "prebuild:dev": "yarn cleanDev:dist && yarn copy:packageJsonToDev",
     "build:dev": "cross-env ROLLUP_WATCH=true rollup -c rollup.config.ts",
-    "build:docs": "yarn docs:clean && jsdoc -c ./jsdoc.json",
-    "build:docsDev": "yarn cleanDev:docs && jsdoc -c ./jsdoc.dev.json",
+    "prebuild:docs": "yarn docs:clean",
+    "build:docs": "jsdoc -c ./jsdoc.js",
+    "prebuild:docsDev": "yarn cleanDev:docs",
+    "build:docsDev": "cross-env JSDOC_DEV=true jsdoc -c ./jsdoc.js",
     "build:ts": "tsc --module commonjs",
     "clean": "concurrently \"yarn:clean:*\" \"yarn:cleanDev:*\"",
     "clean:dist": "rimraf dist/*",
@@ -50,7 +52,7 @@
     "watch:tsc": "tsc -p tsconfig.dev.json -w --module commonjs",
     "watch:test": "jest --watch --onlyChanged",
     "watch:rollup": "rollup -c rollup.config.ts -w",
-    "watch:docs": "yarn cleanDev:docs && npx nodemon --exec yarn build:docsDev --watch src,docsSrc --ext js,mjs,json,ts,jsx --delay 15"
+    "watch:docs": "npx nodemon --exec yarn build:docsDev --watch src --ext js,mjs,json,ts,jsx"
   },
   "repository": {
     "type": "git",

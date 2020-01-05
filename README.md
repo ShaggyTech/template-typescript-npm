@@ -45,14 +45,13 @@ Some of the root level files are configuration files for various packages used i
 | Rollup     | rollup.config.ts  | Uses process.env.ROLLUP_WATCH to determine dev or production modes |   X  |  x  |
 | Typescript | tsconfig.json     | Used for production builds                                         |   x  |     |
 |            | tsconfig.dev.json | Used for development builds                                        |      |  x  |
-| JSDoc      | jsdoc.json        | Production Documentation                                           |   x  |     |
-|            | jsdoc.dev.json    | Development Documentation                                          |      |  x  |
+| JSDoc      | jsdoc.js          | Uses process.env.JSDOC_DEV to determine dev or production modes    |   x  |  x  |
 | Jest       | jest.config.js    | Testing configuration                                              |      |  x  |
 | Babel      | .babelrc          | Used to transpile code in production and development               |   x  |  x  |
 | ESLint     | .eslintrc.js      | Used by our code editor to enforce code standards and styling      |      |  x  |
 | Prettier   | .prettierrc       | Used by our code editor (VS Code)                                  |      |  x  |
 
-  ---
+---
 
 Some commands to get you started with local development (more below in the commands section):
 
