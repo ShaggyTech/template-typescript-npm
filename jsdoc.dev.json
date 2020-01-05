@@ -1,0 +1,57 @@
+{
+  "source": {
+    "include": ["src", "docsSrc"],
+    "includePattern": ".(js|ts|doc|tsdoc)",
+    "excludePattern": "(node_modules/|docs/|dev/|dist/|coverage/)"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/better-docs/category",
+    "jsdoc-plugin-typescript",
+    "node_modules/jsdoc-babel"
+  ],
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "default": {
+      "staticFiles": {
+        "include": ["./docsSrc/static"]
+      }
+    },
+    "better-docs": {
+      "name": "@shaggytools/template-typescript-npm",
+      "logo": "",
+      "hideGenerator": true,
+      "navigation": [
+        {
+          "label": "Github",
+          "href": "https://github.com/ShaggyTech/template-typescript-npm"
+        },
+        {
+          "label": "@shaggytech",
+          "href": "https://www.shaggytech.com"
+        }
+      ]
+    }
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./dev/docs/",
+    "template": "node_modules/better-docs",
+    "tutorials": "./docsSrc/tutorials",
+    "readme": "./README.md"
+  },
+  "typescript": {
+    "moduleRoot": "src"
+  },
+  "markdown": {
+    "idInHeadings": true
+  },
+  "babel": {
+    "extensions": ["ts", "tsx", "md"],
+    "ignore": ["**/*.(test|spec).ts"]
+  }
+}
