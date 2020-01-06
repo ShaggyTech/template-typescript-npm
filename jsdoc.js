@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const isDev = process.env.JSDOC_DEV
-const outDir = isDev ? './dev/docs/' : './docs/'
+const isDev = process.env.JSDOC_ENV === 'development'
+const outDir = isDev ? 'dev/docs/' : 'docs/'
 
 const pkg = require('./package.json')
 
@@ -34,7 +34,7 @@ module.exports = {
       navigation: [
         {
           label: 'Github',
-          href: `https://github.com/${pkg.name}`
+          href: `https://github.com/${pkg.libraryName}`
         },
         {
           label: '@shaggytech',
