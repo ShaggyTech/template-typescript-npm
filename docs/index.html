@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./build/entry.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,400,700|Oswald:300|Inconsolata,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+</head>
+
+<body>
+    <div id="stickyNavbarOverlay"></div>
+    <div class="top-navbar">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    
+                     
+                        <h1 class="navbar-item">@shaggytools/template-typescript-npm</h1>
+                    
+                    <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                 
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                    
+                        <div class="navbar-item">
+                            <a href="https://github.com/library-name" target="_blank">
+                                Github
+                            </a>
+                        </div>
+                    
+                        <div class="navbar-item">
+                            <a href="https://www.shaggytech.com" target="_blank">
+                                @shaggytech
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3" id="sidebarNav">
+                <div class="sidebar">
+                    <nav>
+                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-placeholder.html">placeholder</a></li></ul><h3>Global</h3><ul><li><a href="global.html#isValidType">isValidType</a></li></ul></div>
+                    </nav>
+                </div>
+            </div>
+            <div class="column is-9-desktop">
+                <div class="content" id="main-content-wrapper">
+                    <header class="page-title">
+                        <p>Title</p>
+                        <h1>Home</h1>
+                    </header>
+                    
+                    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h2 id="%40shaggytools%2F">@shaggytools/</h2>
+<h1 id="template-typescript-npm">template-typescript-npm</h1>
+<p>A boilerplate/starter template to <strong>code</strong> in <a href="https://www.typescriptlang.org/">Typescript</a>, <strong>unit test</strong> with <a href="https://jestjs.io/">Jest</a>, generate <strong>documentation</strong> with <a href="https://github.com/jsdoc/jsdoc">JSDoc</a>, build a <strong>universal package</strong> with <a href="https://rollupjs.org/guide/en/">Rollup</a> and <strong>publish</strong> your package to <a href="https://www.npmjs.com/">npm</a> / <a href="https://www.yarnpkg.com/">yarn</a> for use anywhere (CommonJs, UMD, AMD, IIFE, ESModule, CDN, browser script, etc.)</p>
+<blockquote>
+<p>INFO: This template was developed and tested on <code>Node v12.14.0</code>, <code>NPM v6.11.3</code>, and <code>Yarn v1.21.1</code></p>
+</blockquote>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li>
+<p>[ ] Install <a href="https://nodejs.org/en/">Node</a></p>
+</li>
+<li>
+<p>[ ] Install <a href="https://yarnpkg.com/lang/en/">Yarn</a> - an alternative to NPM and used in this template's scripts.</p>
+</li>
+<li>
+<p>[ ] Optional - Install <a href="https://github.com/nvm-sh/nvm">NVM</a> - to switch between different node versions.</p>
+</li>
+<li>
+<p>[ ] It is recommended to use the <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor to develop your package.</p>
+</li>
+<li>
+<p>[ ] It is also recommended to install the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server - Extension for VS Code</a> to be able to test live versions of your modules locally in the browser before publishing to NPM and Yarn.</p>
+</li>
+</ul>
+<hr>
+<h1 id="setup---required">Setup - <em>REQUIRED</em></h1>
+<hr>
+<h2 id="1.-clone-this-template-and-install-dev-dependencies">1. Clone this template and install dev dependencies</h2>
+<pre class="prettyprint source lang-node"><code>// Clone this repository:
+git clone https://github.com/ShaggyTech/template-typescript-npm.git
+
+// Change into the template directory
+cd template-typescript-npm
+
+//Install all of the development dependencies listed in the package.json with:
+yarn install
+
+</code></pre>
+<h2 id="2.-edit-the-package.json-file">2. Edit the package.json file</h2>
+<ol>
+<li>
+<p>Change the <code>&quot;name&quot;</code> field to what you want your NPM / Yarn package name to be.</p>
+<ul>
+<li>This package uses an npm organization as the first part of the name (@shaggytools/) but not all packages do.</li>
+</ul>
+</li>
+<li>
+<p>Change the <code>&quot;libraryName&quot;</code> to the global variable name you want to use when importing and using the package in a browser script. Ex: <code>myModuleName.function()</code>.</p>
+<ul>
+<li>The <code>rollup.config.ts</code> file uses this field to determine the library name output in the various bundles.</li>
+<li>You might also want to change the various .html and .ts files in the <code>/tests/</code> folder to use this new name in the script imports.  These html files are simply there to show you how the various modules can be imported and used in the browser.</li>
+</ul>
+</li>
+<li>
+<p>Customize the following fields to your desired values:</p>
+<ul>
+<li><code>&quot;version&quot;</code>: start at 1.0.0 or 0.0.1, etc.</li>
+<li><code>&quot;description&quot;</code>: short description of your package</li>
+<li><code>&quot;repository.url&quot;</code>: your git remote repository</li>
+<li><code>&quot;author&quot;</code>: your name, email, etc.</li>
+<li><code>&quot;bugs.url&quot;</code>: where users can report bugs</li>
+<li><code>&quot;homepage&quot;</code>: can be documentation homepage (gh-pages) or github link, etc.</li>
+<li><code>&quot;keywords&quot;</code>: an array of keywords to help find your package in searches</li>
+</ul>
+</li>
+</ol>
+<h2 id="3.-edit-this-.%2Freadme.md-file">3. Edit this ./README.md File</h2>
+<p>This README file, that you are currently reading, will serve as the <code>index.html</code> of the <a href="https://www.shaggytech.com/template-typescript-npm/index.html">documentation</a>, as well as the <a href="https://www.npmjs.com/package/@shaggytools/template-typescript-npm">npmjs.com</a>, <a href="https://yarnpkg.com/en/package/@shaggytools/template-typescript-npm">yarnpkg.com</a>, and <a href="https://github.com/shaggytech/template-typescript-npm">source code</a> homepages.  Therefore, you must complete the following steps:</p>
+<p><strong>1.</strong>
+Bookmark the <a href="https://www.shaggytech.com/template-typescript-npm/index.html">live documentation</a> version of this README for future reference as you are about to heavily edit or delete the contents of this file and may need it in the future. You can also rename or move the file if you prefer to save a local copy.</p>
+<p><strong>2.</strong></p>
+<ul>
+<li><em>EITHER</em> Heavily edit and modify this README file to suit your package needs.</li>
+<li><em>OR</em> Delete the contents of this file and start over with your package info.</li>
+<li><em>OR</em> Rename this file to something else so you can still reference it later, and create a new root <code>./README.md</code> file with your desired package info.</li>
+</ul>
+<p><strong>3. Optional</strong>
+You can change the homepage of the documentation by changing <code>module.exports.opts.readme</code> in the JSDoc config file: <code>./jsdoc.js</code></p>
+<h2 id="4.-add-npm%2Fyarn-credentials">4. Add npm/yarn credentials</h2>
+<ol>
+<li>
+<p>Ensure you've setup your <code>package.json</code> as described above.</p>
+</li>
+<li>
+<p>Folow the steps listed <a href="https://yarnpkg.com/lang/en/docs/publishing-a-package/">HERE</a> to get setup for publishing your package.</p>
+</li>
+</ol>
+<h2 id="5.-congrats!">5. <em>CONGRATS!</em></h2>
+<p><strong>You're all setup for local development and publishing and NPM package! Additional optional setup steps, commands, etc. are below:</strong></p>
+<hr>
+<h2 id="some-commands-to-get-you-started-with-local-development-(more-listed-below-in-the-commands%2Fscripts-section)">Some commands to get you started with local development (more listed below in the commands/scripts section)</h2>
+<ul>
+<li>
+<p><code>yarn build</code> - will output the <em>production</em> rollup build to the <code>/dist</code> folder.  This is the folder that will be used as the source for our NPM/Yarn package.  This script will be automatically run before the <code>yarn release</code> script.</p>
+</li>
+<li>
+<p><code>yarn watch</code> - will simultaneously run TSC, Rollup, JSDoc, and Jest in watch modes, watching for changes in the <code>./src</code>, <code>./docs</code>, <code>./docsSrc</code> and <code>/tests</code> folders, with all outputs going to the <code>./dev</code> folder.</p>
+</li>
+</ul>
+<h2 id="optional-additional-setup">Optional Additional Setup</h2>
+<p>Some additional setup steps you may want to perform.</p>
+<h3 id="clean-the-.%2Fdocs-folder-for-a-fresh-start-on-documentation">Clean the ./docs folder for a fresh start on documentation</h3>
+<p><code>yarn docs:clean</code></p>
+<h3 id="edit-configuration-files">Edit Configuration Files</h3>
+<p>Some files at the root project level are configuration files for various packages used in this template.  I encourage you to open these up and at least skim through them.  Play around and see how the process and build is affected when changing or adding config options.</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Config File</th>
+<th>Description</th>
+<th style="text-align:center">Prod</th>
+<th style="text-align:center">Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rollup</td>
+<td>rollup.config.ts</td>
+<td>Uses process.env.ROLLUP_WATCH = 'true' or 'false' to switch output location and other options</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Typescript</td>
+<td>tsconfig.json</td>
+<td>Used for production builds</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>Typescript</td>
+<td>tsconfig.dev.json</td>
+<td>Used for development builds</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>JSDoc</td>
+<td>jsdoc.js</td>
+<td>Uses process.env.JSDOC_ENV = 'development' or 'production' to switch output location and other options</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Jest</td>
+<td>jest.config.js</td>
+<td>Testing during development</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Babel</td>
+<td>.babelrc</td>
+<td>Used to transpile code in production and development</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>ESLint</td>
+<td>.eslintrc.js</td>
+<td>Used by our code editor to enforce code standards and styling</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Prettier</td>
+<td>.prettierrc</td>
+<td>Used by our code editor (VS Code) for styling our code</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<hr>
+<h1 id="development-scripts">Development scripts</h1>
+<hr>
+<p>There are more scripts in the <code>./package.json</code> file than are listed here but these are the frequently used ones. Add your own or modify the existing ones if needed.</p>
+<p>All of these commands are to be run in the terminal from the root project directory, and can be found in the <code>./package.json</code> file.  You can also substitute <code>npm add</code> for <code>yarn</code> in the commands if you prefer to use NPM.</p>
+<hr>
+<h2 id="yarn-build"><code>yarn build</code></h2>
+<p>This script will output the <em>production</em> Rollup build to the <code>/dist</code> folder.</p>
+<ul>
+<li>Run <em>before</em>  <code>yarn release</code></li>
+</ul>
+<hr>
+<h2 id="yarn-build%3Adocs"><code>yarn build:docs</code></h2>
+<p>This script builds the <strong>production</strong> documentation via JSDoc.</p>
+<ul>
+<li>
+<p>Utilizes <code>process.env.JSDOC_ENV</code> with 'production' or 'development' values</p>
+</li>
+<li>
+<p>First cleans all files from the <code>./docs</code> folder, then</p>
+</li>
+<li>
+<p>Outputs documentation files to <code>./docs/</code>.</p>
+</li>
+<li>
+<p>See <code>./jsdoc.js</code> to adjust the options, output, plugins, templates, etc.</p>
+</li>
+</ul>
+<hr>
+<h2 id="yarn-build%3Adocsdev"><code>yarn build:docsDev</code></h2>
+<p>This script will build the <strong>development</strong> version of the documentation via JSDoc</p>
+<ul>
+<li>
+<p>Utilizes <code>process.env.JSDOC_ENV</code> with 'production' or 'development' values</p>
+</li>
+<li>
+<p>Outputs documentation files to <code>./dev/docs/</code></p>
+</li>
+<li>
+<p>See <code>./jsdoc.js</code> to adjust the documentation options, output, plugins, template, etc.</p>
+</li>
+</ul>
+<hr>
+<h2 id="yarn-build%3Arollup"><code>yarn build:rollup</code></h2>
+<p>This script will build the <strong>production</strong> version of the final npm package, via Rollup and output to <code>./dist/</code>.</p>
+<hr>
+<h2 id="yarn-build%3Arollupdev"><code>yarn build:rollupDev</code></h2>
+<p>This script will build the <strong>development</strong> version of the final npm package, via Rollup and output to <code>./dev/dist/</code>.</p>
+<hr>
+<h2 id="yarn-clean"><code>yarn clean</code></h2>
+<p>This script will clean all files from the <code>./dist/</code> and <code>./dev/</code> folders.</p>
+<hr>
+<h2 id="yarn-clean%3Adist"><code>yarn clean:dist</code></h2>
+<p>This script will clean all files from the <code>./dist/</code> folder.</p>
+<hr>
+<h2 id="yarn-cleandev"><code>yarn cleanDev</code></h2>
+<p>This script will clean all files from the <code>./dev/</code> folder.</p>
+<hr>
+<h2 id="yarn-release"><code>yarn release</code></h2>
+<ul>
+<li>will do the following, in listed order, to publish your package:
+<ul>
+<li>clean the <code>/dist/</code> folder</li>
+<li>run <code>yarn build</code> script</li>
+<li>run <code>yarn publish</code> script</li>
+<li>ask for a new version number</li>
+<li>publish the contents of the <code>./dist/</code> folder to both NPM and Yarn, using the value of <code>package.json.name</code> and the new version number</li>
+<li>run <code>git push --tags</code> to update your repository with a commit tagged with the newest version</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="yarn-watch"><code>yarn watch</code></h2>
+<p>This script will run the <code>watchAll.js</code> script located in the root <code>bin</code> directory and allow you to more easily watch all portions of the development process, reloading with file changes each time.</p>
+<ul>
+<li>Outputs development files to relevant sub-directories of the <code>./dev/</code> directory.</li>
+<li>will simultaneously run TSC, Rollup, JSDoc, and Jest in watch modes, watching for changes in the <code>./src</code>, <code>./docs</code>, <code>./docsSrc</code> and <code>/tests</code> folders, with all outputs going to the <code>./dev</code> folder.</li>
+<li>Under the hood this command runs the <code>watchAll.js</code> file found in the <code>/bin</code> folder. Feel free to modify that file if you want to adjust/add/remove any of the commands that are run concurrently.</li>
+</ul>
+<blockquote>
+<p>NOTE:
+This command is CPU intensive and may be slow on older PCs. You may be better off either removing a few of the commands from the <code>bin/watchAll.js</code> script, or running the individual watch scripts (<code>watch:docs</code> <code>watch:test</code> <code>watch:rollup</code> <code>watch:tsc</code>) themselves, in separate windows, as needed.</p>
+</blockquote>
+<blockquote>
+<p>NOTE:
+You won't be able to use Jest keyboard commands in this main watch mode, use <code>watch:test</code> if you need finer control in Jest watch mode.</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="project-structure">Project Structure</h1>
+<hr>
+<p><code>!</code> - denotes a folder + sub-folders ignored by git (see <code>.gitignore</code> file) and not included when committing and pushing to a remote repository. You can safely delete or clear these folders before <em>committing and pushing to a remote repository</em>.</p>
+<p><code>*</code> - denotes a folder + sub-folders ignored when publishing to NPM/Yarn with <code>yarn release</code>. You can safely delete or clear these folders before <em>publishing your package</em>.</p>
+<h2 id="overview">Overview</h2>
+<pre class="prettyprint source lang-markdown"><code>## Folder Structure
+
+bin/
+
+  &lt;!*>
+  dev/
+    coverage/
+      - code coverage output files from Jest
+
+    dist/
+      - development rollup build, mirrors root /dist folder structure
+
+    docs/
+      - production documentation build with JSDoc, considered part of source code.
+
+    package.json
+      - copy of the root package.json file,
+      - simulates a final package so you can import directly from the ./dev folder
+
+  &lt;!>
+  dist/
+    - browser/
+      - IIFE
+      - minified
+      - single file
+
+    - cjs/
+      - CommonJs/Node)
+      - code-split
+      - module
+
+    - module/
+      - ESM Module
+      - ES2015+
+      - code-split
+      - module
+
+    - types/
+      - Typescript `.d.ts` type definition files
+      - auto populated from your ./src code
+
+    - bundle.min.js
+      - UMD (universal bundle)
+      - browser and node
+      - minified
+      - single file
+
+    - bundle.min.js.gz
+      - UMD
+      - Universal Bundle, browser and node
+      - minified
+      - gzipped
+
+  docs/
+
+  docsSrc/
+    - static/
+    - tutorials/
+
+  src/
+    - __tests__/ (test files ending with .test.ts)
+    - index.ts (main entry)
+    - ... more source code
+
+  tests/
+    - browser/
+      - simulated browser imports in .html files
+    - node/
+      - simulated CommonJs imports in .ts files
+
+  README.md
+    - home page of the documentation page and npmjs.com package
+
+  package.json
+    - scripts and package settings
+
+  + various package configuration files
+
+</code></pre>
+<hr>
+<h2 id="directories">Directories</h2>
+<p><code>!</code> - denotes a folder + sub-folders ignored by git (see <code>.gitignore</code> file) and not included when committing and pushing to a remote repository. You can safely delete or clear these folders before <em>committing and pushing to a remote repository</em>.</p>
+<p><code>*</code> - denotes a folder + sub-folders ignored when publishing to NPM/Yarn with <code>yarn release</code>. You can safely delete or clear these folders before <em>publishing your package</em>.</p>
+<hr>
+<h3 id=".%2Fbin%2F"><code>./bin/</code></h3>
+<p>A directory containing node helper scripts used in <code>package.json</code> scripts.</p>
+<hr>
+<h3 id="%3C-!-*-%3E-.%2Fdev%2F">&lt; ! * &gt; <code>./dev/</code></h3>
+<p>A directory which contains all of the output when running any of the development scripts in <code>package.json</code></p>
+<ul>
+<li>
+<p>Directory will not be created until the first time you run a development script that outputs here.</p>
+</li>
+<li>
+<p>Not included in the source code repository nor in the published package code</p>
+</li>
+<li>
+<p>Clear all folder contents via <code>yarn cleanDev</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="%3C-!-%3E-.%2Fdist%2F">&lt; ! &gt; <code>./dist/</code></h3>
+<p>A directory which contains all of the output from <code>yarn build</code> script in <code>package.json</code>.</p>
+<p>This is also the directory that will be uploaded to NPM/Yarn when you publish your package with <code>yarn publish</code>.</p>
+<ul>
+<li>
+<p>Directory will not be created until the first time you run the <code>build</code> script.</p>
+</li>
+<li>
+<p>Not included in the source code repository.</p>
+</li>
+<li>
+<p>Clear folder contents via <code>yarn clean:dist</code></p>
+</li>
+</ul>
+<hr>
+<h3 id=".%2Fdocs%2F"><code>./docs/</code></h3>
+<p>A directory containing the output from <code>yarn build:docs</code></p>
+<p>Github can automatically update your documentation site every time you push changes to this folder to your remote repository. Set this folder as the gh-pages source in your repository settings:</p>
+<p><a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">See this Github help article for more information</a></p>
+<ul>
+<li>Clear folder contents via <code>yarn docs:clean</code></li>
+</ul>
+<hr>
+<h3 id=".%2Fdocssrc%2F"><code>./docsSrc/</code></h3>
+<p>A directory containing static assets, tutorials, and anything else you would like to include when building the documentation files.</p>
+<hr>
+<h3 id=".%2Fsrc%2F"><code>./src/</code></h3>
+<p>A directory containing all source code typescript files as well as unit tests located in <code>__tests__</code> sub directories.</p>
+<hr>
+<h3 id=".%2Ftests%2F"><code>./tests/</code></h3>
+<p>A directory containing tests that check various ways of importing the module.</p>
+<hr>
+<hr>
+<h1 id="documenting-your-code">Documenting your code</h1>
+<hr>
+<p>This template utilizes the NPM module <a href="https://github.com/jsdoc/jsdoc">JSDoc</a> in order to document your code.</p>
+<p>I encourage you to read through the JSDoc <a href="https://devdocs.io/jsdoc/">documentation</a> if you're not familiar with how to document your code.</p>
+<blockquote>
+<p>NOTE: It is recommended to preview a <em>development</em> version of the documentation first before building the production docs.  Although, this is effectively the same thing as watching/building the <em>production</em> version, it was thought to be a better practice if we separate <em>development</em> and <em>production</em> versions of the documentation builds.  As the <code>./docs/</code> folder is part of the source code and is used by gh-pages for live production documentation, we only want to rebuild docs in that folder when we're ready to commit production docs to source.  It might be prudent to go so far as to build and commit the production docs in a separate commit, after committing other souce code files.</p>
+</blockquote>
+<h2 id="documentation-during-development">Documentation during Development</h2>
+<p><strong>Using VS Code and the Live-Server plugin to see documentation output live during the development stage</strong></p>
+<p>Using <a href="https://code.visualstudio.com/">Visual Studio Code</a> and the associated <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">LiveServer</a> plugin you can utilize the following scripts to setup live documentation changes.</p>
+<ul>
+<li><code>yarn watch</code> or <code>yarn watch:docs</code></li>
+</ul>
+<p>This will output documentation build files to the <code>./dev/docs/</code> directory.</p>
+<p>If you then <em>right click</em> on the <code>index.html</code> file and select <code>Open With Live Server</code>, this will open a new browser window. Any changes you make to files located in the <code>./src/</code> and <code>./docsSrc/</code> directories will trigger the docs to get rebuilt and the changes reflected live in the browser window that was opened with Live Server.</p>
+<p>Once you are satisfied with your changes, continue to the next section below to see how you can use Github-Pages to serve a live version of your documentation.</p>
+<h2 id="production-documentation">Production Documentation</h2>
+<p><strong>Setup gh-pages to serve your live documentation from remote repository:</strong></p>
+<p>Github can use the <code>docs</code> folder in your remote github repository to serve a live version of the JSDoc build files in that folder.</p>
+<p>This means you can update the 'production' documentation by simply building new documentation files in the local <code>./docs</code> folder and pushing the changes to your remote repository, whereafter the live 'production' documentation website should be updated within several minutes.  Follow these steps to get it going:</p>
+<blockquote>
+<p><strong>IMPORTANT!</strong> -  If you haven't moved, modified, or renamed this very ./readme.md file, YOU HAVE NOT COMPLETED SETUP and should do so now before proceeding with the following steps. The Setup section can be found at the top of this document.</p>
+</blockquote>
+<ol>
+<li>
+<p>Make sure you have followed all steps in the 'Setup' section at the top of this file.  It's important that your <code>./package.json</code> and <code>./README.md</code> files have been setup for your specific package/project.</p>
+</li>
+<li>
+<p>Set the <code>docs</code> folder as the gh-pages source in your repository settings. <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">See this Github help article for more information</a></p>
+</li>
+<li>
+<p>Make changes to your documentation, in either the <code>./src/</code> or <code>./docsSrc/</code> directories.</p>
+</li>
+<li>
+<p>Run <code>yarn build:docs</code> to generate new documentation in the <code>./docs/</code> directory.</p>
+</li>
+<li>
+<p>Run <code>git commit -m &quot;commit message here&quot;</code></p>
+</li>
+<li>
+<p>Run <code>git push</code> to update the remote repository, and new changes to documentation will be live within several minutes.</p>
+</li>
+</ol>
+<p><strong>See <a href="https://www.shaggytech.com/template-typescript-npm/index.html">HERE</a> for an example of the live documentation for this template package.</strong></p>
+<hr>
+<hr>
+<h1 id="testing-your-code-(unit-testing)-with-jest">Testing your code (unit testing) with Jest</h1>
+<hr>
+<p>This template utilizes the NPM module <a href="https://jestjs.io/">Jest</a> in order to test the code you write.</p>
+<p>I encourage you to read through the Jest <a href="https://jestjs.io/docs/en/getting-started">Documentation</a> if you're not familiar with how to test your code.</p>
+<h2 id="testing-scripts-included-in-this-template">Testing scripts included in this template</h2>
+<p><code>yarn watch:test</code></p>
+<p>Runs Jest in watch mode with the --onlyChanged option flag, this will limit tests to only files that have changed since the most recent git commit.</p>
+<p><code>yarn test</code></p>
+<p>Runs all tests once.</p>
+<p><code>yarn watch</code></p>
+<p>Runs Jest in watch mode with the --onlyChanged option flag, concurrently with other dev watch scripts. Note that you won't be able to enter any commands to control jest, use 'yarn watch:test' if you need to enter jest commands:</p>
+<hr>
+<hr>
+<h1 id="building-your-package">Building your package</h1>
+<hr>
+<p>This template utilizes the NPM module <a href="https://rollupjs.org/guide/en/">Rollup</a> and various associated plugins in order to package your module into multiple formats (the 'universal' part of this template).</p>
+<p>I encourage you to read through the Rollup <a href="https://">Documentation</a> if you're not familiar with how to bundle your code.</p>
+<p>The build outputs to <code>./dist/</code> and is controlled via the <code>rollup.config.ts</code> config file.</p>
+<p>By default this template is setup to output the following formats: <code>Default:UMD(Universal</code> - <code>CJS(CommonJS/Node)</code>  <code>ESM(ES Module)</code>  <code>IIFE(Browser)</code>. This and other options can be changed in the rollup config file.</p>
+<p>A <code>types</code> folder is also output into <code>./dist/</code>, which will contain all of the Typescript type definition files (.d.ts) for your package. Change the output location in the <code>tsconfig.json</code> and/or <code>tsconfig.dev.json</code> Typesrcipt config files.</p>
+<h2 id="development-build">Development Build</h2>
+<p><code>yarn build:dev</code> or <code>yarn watch</code> or <code>yarn watch:rollup</code></p>
+<p>Will build the package with Rollup and output everything to <code>./dev/dist/</code>. A copy of the <code>./package.json</code> file will also be placed in the root of <code>./dev/</code> folder.</p>
+<h2 id="production-build">Production Build</h2>
+<p><code>yarn build</code></p>
+<p>Will build the package with Rollup and output everything to <code>./dist/</code>. The contents of that folder are what gets uploaded to NPM and Yarn when you publish your package.</p>
+<hr>
+<hr>
+<h1 id="publishing-your-package-to-npm-and-yarnpkg">Publishing your package to NPM and YarnPkg</h1>
+<hr>
+<h2 id="setup">Setup</h2>
+<blockquote>
+<p>IMPORTANT:
+<strong>Make sure you have followed all of the steps in the Setup section of this document before proceeding!</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>Folow the steps listed <a href="https://yarnpkg.com/lang/en/docs/publishing-a-package/">HERE</a> to get setup and ready to publish your package.  You will need to be logged in to NPM with your credentials to be able to publish a package.</p>
+</li>
+<li>
+<p>Make sure you've setup your root <code>package.json</code> file</p>
+</li>
+<li>
+<p>Make sure you've setup your root <code>README.md</code> file</p>
+</li>
+</ul>
+<h2 id="release">Release</h2>
+<p>It is advised that you commit and push all of your source code to your remote repository before running the <code>release</code> script. If done correctly, the last 2 commits in your remote repo, after publishing, should be <code>&lt;vX.X.X&gt;</code> and then <code>&lt;new source code commit&gt;</code>.</p>
+<p>This is a final step and the version number you choose is permanent, once published it cannot be changed.  If you mess up or need to change something after publishing, you will have to bump the version (x.x.+1) by running <code>yarn release</code> again.</p>
+<p>We recommend using the <a href="https://yarnpkg.com/lang/en/docs/cli/pack/">yarn pack</a> or <a href="https://yarnpkg.com/lang/en/docs/cli/link/">yarn link</a> commands to test local development before publishing.</p>
+<p>You can also use the files found in the root <code>tests/</code> folder to test your Rollup output is correctly imported in various different scenarios before publishing.</p>
+<p><strong><code>yarn pack</code></strong> creates gzipped NPM package file</p>
+<ul>
+<li>creates a gzipped file identical to what will be uploaded to NPM as the final package contents. Use this to ensure you're uploading what you think you are to NPM, upon release.</li>
+</ul>
+<p><strong><code>yarn release</code></strong> to <strong>publish</strong> your package.</p>
+<ul>
+<li>This script will run <code>yarn build</code> before attempting to publish your package.</li>
+<li>You will be prompted to enter a new version number before publishing is completed. Once entered, the package.json &quot;version&quot; field will be changed to reflect the new version, saved, and git committed.</li>
+<li>After successfully publishing the package, <code>git push --tags</code> is run to push a commit to remote source with the new version as the commit name.</li>
+</ul>
+<hr>
+<hr></article>
+    </section>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Mon Jan 06 2020 01:10:33 GMT-0600 (Central Standard Time)</p>
+        <p class="sidebar-created-by">
+            <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+            <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+        </p>
+    </div>
+</footer>
+
+
+<script src="scripts/app.min.js"></script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
