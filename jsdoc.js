@@ -34,7 +34,7 @@ module.exports = {
       navigation: [
         {
           label: 'Github',
-          href: `${pkg.bugs}`
+          href: `${pkg.homepage}`
         },
         {
           label: '@shaggytech',
