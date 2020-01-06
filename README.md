@@ -59,7 +59,7 @@ yarn install
 
 ## 3. Edit this ./README.md File
 
-This README file, that you are currently reading, will serve as the `index.html` of the [documentation](https://www.shaggytech.com/template-typescript-npm/index.html), as well as the [npmjs.com](https://www.npmjs.com/package/@shaggytools/template-typescript-npm), [yarnpkg.com](https://yarnpkg.com/en/package/@shaggytools/template-typescript-npm), and [source code](https://github.com/shaggytech/template-typescript-npm) homepages.  Therefore, you must complete the following steps:
+The root template `README.md` file, that you are currently reading this from, will serve as the `index.html` of the [documentation](https://www.shaggytech.com/template-typescript-npm/index.html), as well as the [npmjs.com](https://www.npmjs.com/package/@shaggytools/template-typescript-npm), [yarnpkg.com](https://yarnpkg.com/en/package/@shaggytools/template-typescript-npm), and [source code](https://github.com/shaggytech/template-typescript-npm) homepages.  Therefore, you must complete the following steps:
 
 **1.**
 Bookmark the [live documentation](https://www.shaggytech.com/template-typescript-npm/index.html) version of this README for future reference as you are about to heavily edit or delete the contents of this file and may need it in the future. You can also rename or move the file if you prefer to save a local copy.

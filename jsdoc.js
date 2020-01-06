@@ -34,11 +34,11 @@ module.exports = {
       navigation: [
         {
           label: 'Github',
-          href: `https://github.com/${pkg.libraryName}`
+          href: `${pkg.bugs}`
         },
         {
           label: '@shaggytech',
-          href: 'https://www.shaggytech.com'
+          href: 'https://www.github.com/shaggytech'
         }
       ]
     }
