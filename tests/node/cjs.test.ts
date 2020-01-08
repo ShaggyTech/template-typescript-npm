@@ -1,3 +1,6 @@
+/** Run the scripts `yarn watch` or `yarn build:dev`
+ * if the tests fail due to missing imports from the `./dev` folder.
+ */
 import UMD = require('../../dev/')
 import CJS = require('../../dev/dist/cjs/')
 

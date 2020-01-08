@@ -7,7 +7,7 @@ const pkg = require('./package.json')
 module.exports = {
   source: {
     include: ['src', 'docsSrc'],
-    includePattern: '.(js|ts|doc|tsdoc)',
+    includePattern: '.(js|ts|doc|tsdoc|md)',
     excludePattern: '(node_modules/|docs/|dev/|dist/|coverage/)'
   },
   plugins: [
