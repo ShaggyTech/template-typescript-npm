@@ -1,7 +1,7 @@
 {
   "name": "@shaggytools/template-typescript-npm",
   "libraryName": "library-name",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A starter template for publishing a package with Node, Typescript, Rollup, Jest, and JSDoc.",
   "engines": {
     "node": ">=12.14.0 <13.0.0",
@@ -28,7 +28,7 @@
     "prebuild-docs": "yarn clean-docs",
     "build-docs": "cross-env-shell JSDOC_ENV=production jsdoc -c ./jsdoc.js",
     "build-dev": "concurrently yarn-build-dev:*",
-    "prebuild-dev:dist": "yarn clean:dev:dist && yarn copy:packageJsonToDev",
+    "prebuild-dev-dist": "yarn clean-dev-dist && yarn copy-packageJsonToDev",
     "build:dev-dist": "yarn copy-packageJsonToDev && cross-env ROLLUP_WATCH=true rollup -c rollup.config.ts",
     "prebuild-dev-docs": "yarn clean-dev-docs",
     "build-dev-docs": "cross-env-shell JSDOC_ENV=development jsdoc -c ./jsdoc.js",
@@ -41,7 +41,7 @@
     "clean-dev-docs": "rimraf dev/docs/*",
     "clean-dev-packageJson": "rimraf dev/package.json",
     "clean-dev-tests": "yarn test-clearCache && rimraf dev/coverage/*",
-    "cleanup": "yarn clean:dev:packageJson && rimraf dist && rimraf dev",
+    "cleanup": "yarn clean-dev-packageJson && rimraf dist && rimraf dev",
     "cleanup-everything": "yarn cleanup && yarn test-clearCache && rimraf node_modules",
     "precopy-packageJsonToDev": "yarn clean-dev-packageJson",
     "copy-packageJsonToDev": "copyfiles ./package.json ./dev",
