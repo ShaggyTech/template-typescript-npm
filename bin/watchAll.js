@@ -11,22 +11,22 @@ const buildDev = async () => {
   return await concurrently(
     [
       {
-        command: 'yarn-watch-tsc',
+        command: 'yarn:watch-tsc',
         name: 'TSC',
         prefixColor: 'black.bold.bgMagenta'
       },
       {
-        command: 'yarn-watch-rollup',
+        command: 'yarn:watch-rollup',
         name: 'ROLLUP',
         prefixColor: 'black.bold.bgCyan'
       },
       {
-        command: 'yarn-watch-test',
+        command: 'yarn:watch-test',
         name: 'JEST',
         prefixColor: 'black.bold.bgGreen'
       },
       {
-        command: 'yarn-watch-docs',
+        command: 'yarn:watch-docs',
         name: 'DOCS',
         prefixColor: 'black.bold.bgYellow'
       }
